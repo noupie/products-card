@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Cards</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="Product-Card">
+      <div class="container">
+        <div class="box">
+          <h2 class="name">DRONE'24</h2>
+          <a href="#" class="buy">Buy Now</a>
+          <div class="circle"></div>
+          <img src="./drone.png" alt="" class="product" />
+        </div>
+        <div class="box">
+          <h2 class="name">SPARKLES</h2>
+          <a href="#" class="buy">Buy Now</a>
+          <div class="circle"></div>
+          <img src="./robot.png" alt="" class="product" />
+        </div>
+        <div class="box">
+          <h2 class="name">MINI-BOT</h2>
+          <a href="#" class="buy">Buy Now</a>
+          <div class="circle"></div>
+          <img src="./robot-2.png" alt="" class="product" />
+        </div>
+      </div>
+    </section>
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".box"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
+  </body>
+</html>
